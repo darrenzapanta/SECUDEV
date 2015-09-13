@@ -1,0 +1,34 @@
+<?php
+ 
+class MessageModel extends CI_Model {
+  public function __construct() {
+    parent::__construct();
+
+    $this->load->library('session');
+
+  }
+    public function addMessage($message){
+        $username = $this->session->userdata('username');
+        $date = date('Y-m-d');
+        $Addarticle = $message;
+        $data = array(
+            'username' => $username,
+            'post'=>$Addarticle,
+            'datecreated'=>$date
+            );
+        $this->db->insert('message', $data);
+    }
+     
+    public function loadMessage(){
+        $this->db->order_by("id","desc");
+        $query =  $this->db->get('tinymce');
+         
+        foreach ($query->result() as $row){
+            $date = date_create($row->created);
+            $date = date_format($date, 'l jS F Y');
+            echo'<blockquote><h3>'.ucfirst($row->title).'</h3></blockquote><p>'.html_entity_decode($row->content).'</p><a href="#" class="btn btn-sm btn-warning">'.$date.'</a><hr/>';
+        }
+        exit;
+    }
+     
+}
