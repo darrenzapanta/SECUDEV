@@ -39,15 +39,16 @@ class verifyregister extends CI_Controller {
       }else{
         $t = 'user';
       }
+      $this->load->helper('security');
      $data = array(
-      'username' => $this->input->post('username'),
-      'password' => MD5($this->input->post('password')),
-      'firstname' => $this->input->post('firstname'),
-      'lastname' => $this->input->post('lastname'),
-      'gender' => $this->input->post('gender'),
-      'salutation' => $this->input->post('salutation'),
-      'birthdate' => $this->input->post('birthdate'),
-      'aboutme' => $this->input->post('aboutme'),
+      'username' => $this->input->post('username', TRUE),
+      'password' => MD5($this->input->post('password', TRUE)),
+      'firstname' => $this->input->post('firstname', TRUE),
+      'lastname' => $this->input->post('lastname', TRUE),
+      'gender' => $this->input->post('gender', TRUE),
+      'salutation' => $this->input->post('salutation', TRUE),
+      'birthdate' => $this->input->post('birthdate', TRUE),
+      'aboutme' => $this->input->post('aboutme', TRUE),
       'type' => $t,
       'datejoined' => date('Y-m-d')
       );

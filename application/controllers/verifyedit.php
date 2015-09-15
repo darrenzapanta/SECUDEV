@@ -35,13 +35,14 @@ class verifyedit extends CI_Controller {
    }
    else
    {
+     $this->load->helper('security');
      $data = array(
-      'firstname' => $this->input->post('firstname'),
-      'lastname' => $this->input->post('lastname'),
-      'gender' => $this->input->post('gender'),
-      'salutation' => $this->input->post('salutation'),
-      'birthdate' => $this->input->post('birthdate'),
-      'aboutme' => $this->input->post('aboutme'),
+      'firstname' => $this->input->post('firstname', TRUE),
+      'lastname' => $this->input->post('lastname', TRUE),
+      'gender' => $this->input->post('gender', TRUE),
+      'salutation' => $this->input->post('salutation', TRUE),
+      'birthdate' => $this->input->post('birthdate', TRUE),
+      'aboutme' => $this->input->post('aboutme', TRUE),
       );
 
        if($this->user->editprofile($data) == true){
