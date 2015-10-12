@@ -24,8 +24,8 @@ class Home extends CI_Controller {
    	$data['birthdate'] = $this->session->userdata('birthdate');
    	$data['username'] = $this->session->userdata('username');
    	$data['aboutme'] = $this->session->userdata('aboutme');
-
-      $config = array();
+      $data['logout'] = session_id();
+      $config = array();   
      $config["base_url"] = site_url() . "/home/index/";
      $config["total_rows"] = $this->MessageModel->record_count();
      $config["per_page"] = 10;
@@ -54,10 +54,18 @@ class Home extends CI_Controller {
    	redirect('welcome', 'refresh');
    }
  }
-function logout(){
-	$this->session->sess_destroy();
-	redirect('welcome', 'refresh');
+function logout($id = null){
+   if($id != null && $id == session_id()){
+   	$this->session->sess_destroy();
+      $this->load->view('header');
+   	$this->load->view('logout');
+      $this->load->view('footer');
+   }else{
+      echo "Invalid";
+   }
 }
+
+
 
 function postmessage(){
    require APPPATH . 'third_party\Htmlawed.php';

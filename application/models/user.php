@@ -40,6 +40,24 @@ Class User extends CI_Model
      return false;
    }
  }
+
+ function getUser($username){
+  $this -> db -> from('users');
+   $this -> db -> where('username', $username);
+   $this -> db -> limit(1);
+ 
+   $query = $this -> db -> get();
+ 
+   if($query -> num_rows() == 1)
+   {
+      return $query->result();
+   }
+   else
+   {
+     return false;
+   }
+
+ }
  function register($data){
   $this->db->insert('users', $data);
   if ($this->db->affected_rows() > 0) {

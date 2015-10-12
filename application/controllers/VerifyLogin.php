@@ -27,7 +27,9 @@ class VerifyLogin extends CI_Controller {
    else
    {
      //Go to private area
-     redirect('home', 'refresh');
+       $this->load->view('header');
+  $this->load->view('loginme');
+   $this->load->view('footer');
    }
  
  }

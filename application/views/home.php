@@ -39,11 +39,13 @@ tinymce.init({
 
         if($this->session->userdata('type') == 'admin'){
           echo "<li>".anchor('register', 'Register')."</li>";  
+          echo "<li>".anchor('backup', 'Back up')."</li>";
         }
       ?>
       <li><?php echo anchor('editprofile', 'Edit Profile'); ?></li>
       <li><?php echo anchor('changepassword', 'Change Password'); ?></li>
-      <li><?php echo anchor('home/logout', 'Logout'); ?></li>
+      <li><?php echo anchor('search', 'Search Post'); ?></li>
+      <li><?php echo anchor("home/logout/".$logout, 'Logout'); ?></li>
     </div>
     <div class="col-lg-10">
         <div class="table-reponsive" style="height: 70%; overflow-y:scroll" >
@@ -153,6 +155,7 @@ tinymce.init({
                 $("#table1").html(html);
             });
     }
+
 
 
     $('#editModal').on('shown.bs.modal', function (e) {

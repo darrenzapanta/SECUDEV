@@ -1,0 +1,44 @@
+"postid","username","datecreated","post","lastedit"
+"15","admin","2015-09-11 17:37:00","&lt;p&gt;Hello&lt;/p&gt;",""
+"16","admin","2015-09-11 17:39:00","&lt;p&gt;Hey&lt;/p&gt;",""
+"17","admin","2015-09-11 17:39:00","&lt;p&gt;KROO&lt;/p&gt;",""
+"18","admin","2015-09-11 17:40:00","&lt;p&gt;DINDIN&lt;/p&gt;",""
+"19","admin","2015-09-11 17:44:00","&lt;p&gt;BEMBOOL&lt;/p&gt;",""
+"20","test","2015-09-11 17:44:00","&lt;p&gt;HI THERE&lt;/p&gt;",""
+"21","test","2015-09-11 17:46:03","&lt;p&gt;HELLO&lt;/p&gt;",""
+"23","test","2015-09-11 17:49:22","textedit=%3Cp%3Efewer%3C%2Fp%3E","2015-09-12 00:00:33"
+"24","test","2015-09-11 17:49:25","&lt;p&gt;KROO&lt;/p&gt;","2015-09-13 14:51:41"
+"25","test","2015-09-11 17:49:30","&lt;p&gt;HIHI&lt;/p&gt;","2015-09-12 00:03:22"
+"28","admin","2015-09-11 23:45:43","&lt;p&gt;HALLOI&lt;/p&gt;",""
+"30","admin","2015-09-11 23:59:52","&lt;p&gt;&amp;lt;b&amp;gt;E&amp;lt;/b&amp;gt;&lt;/p&gt;","2015-09-13 14:52:13"
+"31","admin","2015-09-11 23:59:58","&lt;p&gt;&amp;lt;a href=&quot;hello.html&quot;&amp;gt;Hi&amp;lt;/a&amp;gt;&lt;/p&gt;","2015-09-13 15:00:43"
+"32","admin","2015-09-13 14:55:04","&lt;p&gt;Hello &amp;lt;b&amp;gt;kroo&amp;lt;/b&amp;gt;&lt;/p&gt;",""
+"33","admin","2015-09-13 14:57:43","&lt;p&gt;&amp;lt;span style=&quot;color:red&quot;&amp;gt;Shi&amp;lt;/span&amp;gt;&lt;/p&gt;",""
+"37","admin","2015-09-13 15:05:06","&lt;p&gt;&lt;span style=&quot;color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 22.8571px; background-color: #f9f9f9;&quot;&gt;&amp;lt;span style=&quot;color:red&quot;&amp;gt;Shi&amp;lt;/span&amp;gt;&lt;/span&gt;&lt;/p&gt;",""
+"38","admin","2015-09-13 15:05:32","&lt;p&gt;&lt;span style=&quot;color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 22.8571px; background-color: #f9f9f9;&quot;&gt;Sh&lt;/span&gt;&lt;/p&gt;",""
+"39","admin","2015-09-13 15:08:32","&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My document title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;span style=&quot;color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 22.8571px; background-color: #f9f9f9;&quot;&gt;&amp;lt;a href=&quot;hello.html&quot;&amp;gt;Hi&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;",""
+"42","admin","2015-09-13 15:15:33","",""
+"43","admin","2015-09-13 15:16:15","<p>&lt;span style=""color:red""&gt;Hello&lt;/span&gt;</p>",""
+"47","admin","2015-09-13 15:53:36","<p><span [removed]>Hello</span></p>","2015-09-13 15:56:13"
+"48","admin","2015-09-13 16:09:24","<p><img > alt=""[removed]alert("" width=""100"" height=""100"" /></p>",""
+"57","admin","2015-09-13 16:24:25","<p><span class=""otag"" [removed]=""font-family: 'Bitstream vera sans mono', 'courier new', courier, monospace; font-size: 12.32px; background-color: #ffffee;"">"" SRC=""http://ha.ckers.org/xss.js""></span><span class=""ctag"" [removed] red; font-family: 'Bitstream vera sans mono', 'courier new', courier, monospace; font-size: 12.32px;"">[removed]</span></p>",""
+"58","admin","2015-09-13 16:26:34","<p><span class=""highLT"" [removed]=""box-sizing: border-box; color: #a52a2a; font-family: Consolas, 'courier new'; font-size: 16px; line-height: 22.4px;"">style</span><span class=""highGT"" [removed]=""box-sizing: border-box; font-family: Consolas, 'courier new'; font-size: 16px; line-height: 22.4px;"" /><span [removed]=""box-sizing: border-box; font-family: Consolas, 'courier new'; font-size: 16px; line-height: 22.4px;"" /><span [removed]=""box-sizing: border-box; font-family: Consolas, 'courier new'; font-size: 16px; line-height: 22.4px;"" /><span [removed]=""box-sizing: border-box; font-family: Consolas, 'courier new'; font-size: 16px; line-height: 22.4px;"" /><span class=""highLT"" [removed]=""box-sizing: border-box; color: #a52a2a; font-family: Consolas, 'courier new'; font-size: 16px; line-height: 22.4px;"">/style</span><span class=""highGT"" [removed] border-box; color: blue; font-family: Consolas, 'courier new'; font-size: 16px; line-height: 22.4px;"">></span></p>",""
+"59","admin","2015-09-13 17:19:21","<p><span style=""color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 22.8571px;"">&lt;span style=""color:red""&gt;Shi&lt;/span&gt;</span></p>",""
+"60","admin","2015-09-13 17:21:39","<p>asd</p>",""
+"61","admin","2015-09-13 17:21:57","<p>asd</p>",""
+"62","admin","2015-09-13 17:37:22","1",""
+"63","admin","2015-09-13 18:19:43","<p>asd</p>",""
+"70","admin","2015-09-13 18:27:25","message=%3Cp%3E%3Cspan+style%3D%22font-family%3A+'%5C'Lucida+Sans+Unicode%5C''%2C+'%5C'Lucida+Grande%5C''%2C+'%5C'Helvetica%5C''%2C+'%5C'Verdana%5C''%2C+sans-serif%3B+font-size%3A+14px%3B%22%3E%26lt%3Bscript%26gt%3Balert(%22hello%22)%26lt%3B%2Fscript%26gt%3B%3C%2Fspan%3E%3C%2Fp%3E",""
+"71","admin","2015-09-13 18:36:24","<p>asd</p>",""
+"77","admin","2015-09-13 18:42:58","<p>alert(""hello"")</p>",""
+"78","admin","2015-09-13 18:45:46","<p> <img src=""http://herbadmother.com/wp-content/themes/thesis_18/custom/rotator/sample-1.jpg"" alt=""asd"" width=""291"" height=""218"" /></p>","2015-09-13 18:46:07"
+"82","admin","2015-09-13 18:50:43","<p><span class=""otag"" style=""color: green; font-family: 'Bitstream vera sans mono', 'courier new', courier, monospace; font-size: 12.32px;""></span><span class=""ctag"" style=""color: red; font-family: 'Bitstream vera sans mono', 'courier new', courier, monospace; font-size: 12.32px;""></span></p>",""
+"83","test","2015-09-22 20:38:52","<p>shh</p>",""
