@@ -64,10 +64,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '127.0.0.1:3306',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'secudev',
+	'hostname' => 'br-cdbr-azure-south-a.cloudapp.net:3306',
+	'username' => 'b28428001aa2eb',
+	'password' => 'f85112d1',
+	'database' => 'secudevprojdb',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
