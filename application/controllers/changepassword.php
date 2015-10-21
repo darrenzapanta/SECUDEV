@@ -13,8 +13,11 @@ class changepassword extends CI_Controller {
  function index()
  {
  	if($this->session->userdata('logged_in') == true){
+ 		include 'user_info_loader.php';
+ 		$data['pagetitle'] = 'Change Password';
+
  		$this->load->helper(array('form'));
- 		$this->load->view('header');
+ 		$this->load->view('header', $data);
    		$this->load->view('changepassword');
    		$this->load->view('footer');
  	}else{

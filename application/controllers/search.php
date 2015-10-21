@@ -14,7 +14,10 @@ class search extends CI_Controller {
  function index()
  {
    if($this->session->userdata('logged_in') == true){
-      $this->load->view('header');
+      include 'user_info_loader.php';
+      $data['pagetitle'] = 'Search Post';
+
+      $this->load->view('header', $data);
       $this->load->view('search');
       $this->load->view('footer');
    }else{

@@ -20,16 +20,19 @@ class VerifyLogin extends CI_Controller {
    if($this->form_validation->run() == FALSE)
    {
      //Field validation failed.  User redirected to login page
-    $this->load->view('header');
+     $data['pagetitle'] = 'Login';
+     $this->load->view('header', $data);
      $this->load->view('login');
      $this->load->view('footer');
+
    }
    else
    {
      //Go to private area
-       $this->load->view('header');
-  $this->load->view('loginme');
-   $this->load->view('footer');
+       // $this->load->view('header');
+    // $this->load->view('loginme');
+    //  $this->load->view('footer');
+    redirect('home','refresh');
    }
  
  }
