@@ -18,7 +18,11 @@ class backup extends CI_Controller {
    if($this->session->userdata('logged_in') == true && $this->session->userdata('type') == 'admin'){
       $fn = get_filenames(APPPATH.'backup/');
       $data["fn"] = $fn;
-      $this->load->view('header');
+
+      include 'user_info_loader.php';
+      $data['pagetitle'] = 'Backup';
+
+      $this->load->view('header', $data);
       $this->load->view('backup', $data);
       $this->load->view('footer');
    }else{

@@ -17,14 +17,10 @@ class Home extends CI_Controller {
  function index($page=0)
  {
    if($this->session->userdata('logged_in') == true){
-   	$data['firstname'] = $this->session->userdata('firstname');
-   	$data['lastname'] = $this->session->userdata('lastname');
-   	$data['gender'] = $this->session->userdata('gender');
-   	$data['salutation'] = $this->session->userdata('salutation');
-   	$data['birthdate'] = $this->session->userdata('birthdate');
-   	$data['username'] = $this->session->userdata('username');
-   	$data['aboutme'] = $this->session->userdata('aboutme');
-      $data['logout'] = session_id();
+   
+    include 'user_info_loader.php';
+    $data['pagetitle'] = 'Home';
+
       $config = array();   
      $config["base_url"] = site_url() . "/home/index/";
      $config["total_rows"] = $this->MessageModel->record_count();
@@ -46,7 +42,7 @@ class Home extends CI_Controller {
      //$data["results"] = $this->loadMessage($config["per_page"], $page);
      $data["links"] = $this->pagination->create_links();
 
-      $this->load->view('header');
+      $this->load->view('header', $data);
       $this->load->view('home', $data);
       $this->load->view('footer');
 
@@ -57,9 +53,10 @@ class Home extends CI_Controller {
 function logout($id = null){
    if($id != null && $id == session_id()){
    	$this->session->sess_destroy();
-      $this->load->view('header');
-   	$this->load->view('logout');
-      $this->load->view('footer');
+    //   $this->load->view('header');
+   	// $this->load->view('logout');
+    //   $this->load->view('footer');
+    redirect('welcome', 'refresh');
    }else{
       echo "Invalid";
    }
