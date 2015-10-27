@@ -40,12 +40,14 @@ tinymce.init({
         if($this->session->userdata('type') == 'admin'){
           echo "<li>".anchor('register', 'Register')."</li>";  
           echo "<li>".anchor('backup', 'Back up')."</li>";
+          echo "<li>".anchor('managestore', 'Manage Store')."</li>";
         }
       ?>
       <li><?php echo anchor('editprofile', 'Edit Profile'); ?></li>
       <li><?php echo anchor('changepassword', 'Change Password'); ?></li>
       <li><?php echo anchor('search', 'Search Post'); ?></li>
       <li><?php echo anchor("home/logout/".$logout, 'Logout'); ?></li>
+      <li><?php echo anchor("donate", 'Donate'); ?></li>
     </div>
     <div class="col-lg-10">
         <div class="table-reponsive" style="height: 70%; overflow-y:scroll" >
