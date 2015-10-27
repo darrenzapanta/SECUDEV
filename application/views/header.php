@@ -10,13 +10,3 @@
  </head>
  <body>
  <div class="container-fluid">
-
- <?php
- 	if(isset($pagetitle))
- 		echo "<h1>$pagetitle</h1>";
- 	else
- 		echo '<br><span style="color:red">DEFINE PAGE TITLE -> $data[\'pagetitle\'] = \'pagetitle\';</span><br><br>';
-
- 	if($this->session->userdata('logged_in'))
- 		include_once 'sidebar/sidebar.php';
- ?>

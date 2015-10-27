@@ -15,15 +15,9 @@ class Register extends CI_Controller {
  	if($this->session->userdata('logged_in') == true && $this->session->userdata('type') != 'admin' ){
  		redirect('home','refresh');
  	}else{
-
- 		if($this->session->userdata('logged_in'))
- 			include 'user_info_loader.php';
-
- 		$data['pagetitle'] = "Register";
-
 	   $this->load->helper(array('form'));
-	   $this->load->view('header', $data);
-	   $this->load->view('register', $data);
+	   $this->load->view('header');
+	   $this->load->view('register');
 	   $this->load->view('footer');
 	}
 }

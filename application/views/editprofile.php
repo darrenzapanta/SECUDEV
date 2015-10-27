@@ -1,3 +1,5 @@
+
+   <h1>Edit</h1>
    
   <?php echo form_open('verifyedit'); ?>
      <label for="firstname">First Name:</label>
@@ -38,7 +40,7 @@
      <input type="submit" value="Save"/>
      <?php echo form_close(); ?>
      <?php echo validation_errors(); ?>
-     
+     <li><?php echo anchor('home', 'Home'); ?></li>
   </div>
 </div>
  <script>

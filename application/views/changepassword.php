@@ -1,4 +1,4 @@
- 
+   <h1>Change Password</h1>
    <?php echo validation_errors(); ?>
    <?php echo form_open('editpassword'); ?>
      <label for="oldpassword">Old Password</label>
@@ -9,3 +9,4 @@
      <br/>
      <input type="submit" value="Save"/>
    </form>
+   <li><?php echo anchor('home', 'Home'); ?></li>

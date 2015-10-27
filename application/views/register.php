@@ -1,5 +1,6 @@
 
-
+   <h1>Register</h1>
+   
   <?php echo form_open('verifyregister'); ?>
      <label for="firstname">First Name:</label>
      <input type="text" size="20" id="firstname" name="firstname"/>

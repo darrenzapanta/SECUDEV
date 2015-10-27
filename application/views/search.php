@@ -1,6 +1,7 @@
-<div class="col-lg-10">
+
 <div class="jumbotron">
-        <div class="form-group" id="BasicGroup">
+        <?php echo anchor('home', 'Home'); ?>
+		<div class="form-group" id="BasicGroup">
 			<h4>Basic Search</h4>
             <form role="form" id="basic" action="<?php echo site_url() ?>/search/basicsearch" class="form" method="POST">
                 <label>Search Post</label>
@@ -54,8 +55,6 @@
 
   </div>
 </div>
-</div>
-
 <script>
 
 $("#basic").submit(function (e){

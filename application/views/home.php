@@ -7,9 +7,46 @@ tinymce.init({
  });
   
 </script>
+<h1>HOME</h1>
 
+<div class="row">
+    <div class="col-lg-2">
+       
 
+      
+      <?php
+        echo "<h6 style=\"display: inline-block\"><strong>Salutation: </strong> </h6>  ";
+        echo $salutation;
+        echo "<br/>";
+        echo "<h6 style=\"display: inline-block\"><strong>First Name:</strong></h6>  ";
+        echo $firstname;
+        echo "<br/>";
+        echo "<h6 style=\"display: inline-block\"><strong>Last Name:</strong>  </h6>  ";
+        echo $lastname;
+        echo "<br/>";
+        echo "<h6 style=\"display: inline-block\"><strong>Gender:</strong>  </h6>  ";
+        echo $gender;
+        echo "<br/>";
+        echo "<h6 style=\"display: inline-block\"><strong>Birthdate: </strong> </h6>  ";
+        echo $birthdate;
+        echo "<br/>";
+        echo "<h6 style=\"display: inline-block\"><strong>About Me: </strong> </h6>  ";
+        echo $aboutme;
+        echo "<br/>";
+        echo "<h6 style=\"display: inline-block\"><strong>User Name: </strong> </h6>  ";
+        echo $username;
+        echo "<br/>";
 
+        if($this->session->userdata('type') == 'admin'){
+          echo "<li>".anchor('register', 'Register')."</li>";  
+          echo "<li>".anchor('backup', 'Back up')."</li>";
+        }
+      ?>
+      <li><?php echo anchor('editprofile', 'Edit Profile'); ?></li>
+      <li><?php echo anchor('changepassword', 'Change Password'); ?></li>
+      <li><?php echo anchor('search', 'Search Post'); ?></li>
+      <li><?php echo anchor("home/logout/".$logout, 'Logout'); ?></li>
+    </div>
     <div class="col-lg-10">
         <div class="table-reponsive" style="height: 70%; overflow-y:scroll" >
             <table id="table1"class="table table-striped" >
@@ -25,6 +62,7 @@ tinymce.init({
         </ul>
         
     </div>
+</div>
 <div class="row">
     <div class="col-lg-10 col-lg-offset-2">
         <div class="form-group">
